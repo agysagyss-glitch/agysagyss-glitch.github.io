@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfolio of Santhosh AG — 3rd-year B.Tech AI & Data Science undergraduate targeting Data Engineering and AI/Data internships."
+  />
+  <title>Santhosh AG | AI &amp; Data Science • Aspiring Data Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a href="#hero" class="nav__brand">
+        <span class="nav__mark" aria-hidden="true">&gt;_</span>
+        <span>Santhosh<span class="accent">.AG</span></span>
+      </a>
+
+      <button
+        class="nav__toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Toggle navigation menu"
+      >
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+
+      <ul class="nav__links" id="nav-menu">
+        <li><a href="#hero" class="nav__link is-active">Home</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#education" class="nav__link">Education</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li>
+          <a
+            href="https://github.com/agysagyss-glitch"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="nav__cta"
+          >
+            GitHub
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero section" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__content reveal">
+          <div class="status-pill">
+            <span class="status-pill__dot" aria-hidden="true"></span>
+            <span>Open to Data Engineering &amp; AI/Data Internships</span>
+          </div>
+
+          <h1 class="hero__title">Santhosh AG</h1>
+          <p class="hero__tagline">
+            AI &amp; Data Science Undergraduate <span class="divider" aria-hidden="true">|</span> Aspiring Data Engineer
+          </p>
+
+          <p class="hero__bio">
+            3rd-year B.Tech AI &amp; Data Science student at SVCE passionate about building
+            reliable automated data pipelines, clean FastAPI backend services, and structured
+            storage workflows that turn raw feeds into actionable data.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">
+              <span>Explore Projects</span>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+
+            <a
+              href="https://github.com/agysagyss-glitch"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+              aria-label="Visit Santhosh AG on GitHub"
+            >
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.04c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 0 0-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 0 1 1.84 1.24 2.55 2.55 0 0 0 3.49 1 2.55 2.55 0 0 1 .76-1.6c-2.67-.3-5.47-1.33-5.47-5.93a4.64 4.64 0 0 1 1.24-3.22 4.3 4.3 0 0 1 .12-3.18s1-.32 3.3 1.23a11.38 11.38 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23a4.3 4.3 0 0 1 .12 3.18 4.64 4.64 0 0 1 1.24 3.22c0 4.61-2.81 5.62-5.48 5.92a2.86 2.86 0 0 1 .81 2.22v3.29c0 .32.22.7.82.58A12 12 0 0 0 12 .5Z" />
+              </svg>
+              <span>GitHub</span>
+            </a>
+
+            <a
+              href="YOUR_LINKEDIN_URL_HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+              aria-label="Connect with Santhosh AG on LinkedIn"
+            >
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                <path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z" />
+              </svg>
+              <span>LinkedIn</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero__card reveal" aria-label="Developer profile summary">
+          <div class="terminal-bar">
+            <div class="card-profile">
+              <img
+                src="profile.jpg"
+                alt="Santhosh AG"
+                class="card-avatar"
+                width="56"
+                height="56"
+              />
+              <div class="card-profile__meta">
+                <span class="card-profile__name">Santhosh AG</span>
+                <a
+                  href="https://github.com/agysagyss-glitch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="card-profile__handle"
+                >
+                  @agysagyss-glitch
+                </a>
+              </div>
+            </div>
+            <span class="terminal-title">profile.json</span>
+          </div>
+          <pre class="terminal-code"><code>{
+  <span class="tok-key">"name"</span>: <span class="tok-str">"Santhosh AG"</span>,
+  <span class="tok-key">"degree"</span>: <span class="tok-str">"B.Tech AI &amp; Data Science"</span>,
+  <span class="tok-key">"year"</span>: <span class="tok-str">"3rd Year"</span>,
+  <span class="tok-key">"institution"</span>: <span class="tok-str">"SVCE"</span>,
+  <span class="tok-key">"cgpa"</span>: <span class="tok-num">8.09</span>,
+  <span class="tok-key">"focus"</span>: [
+    <span class="tok-str">"Data Engineering"</span>,
+    <span class="tok-str">"ETL / Data Pipelines"</span>,
+    <span class="tok-str">"FastAPI &amp; REST Services"</span>
+  ],
+  <span class="tok-key">"status"</span>: <span class="tok-str">"Seeking Internships"</span>
+}</code></pre>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Skills Grid -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="section__eyebrow">Technical Stack</p>
+            <h2 class="section__title">Skills &amp; Core Tools</h2>
+          </div>
+          <div class="filter-group" role="group" aria-label="Filter skills by category">
+            <button type="button" class="filter-btn is-active" data-filter="all">All</button>
+            <button type="button" class="filter-btn" data-filter="data">Data &amp; Storage</button>
+            <button type="button" class="filter-btn" data-filter="backend">APIs &amp; Backend</button>
+            <button type="button" class="filter-btn" data-filter="workflow">Workflow &amp; Design</button>
+          </div>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal" data-category="data">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">Py</span>
+              <span class="skill-card__tag">Language</span>
+            </div>
+            <h3 class="skill-card__title">Python</h3>
+            <p class="skill-card__desc">
+              Scripting automated ingestion jobs, data transformation, validation, and backend services.
+            </p>
+          </article>
+
+          <article class="skill-card reveal" data-category="data">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">SQL</span>
+              <span class="skill-card__tag">Querying</span>
+            </div>
+            <h3 class="skill-card__title">SQL</h3>
+            <p class="skill-card__desc">
+              Relational schema design, aggregations, joins, and analytical querying for structured datasets.
+            </p>
+          </article>
+
+          <article class="skill-card reveal" data-category="backend">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">FA</span>
+              <span class="skill-card__tag">Framework</span>
+            </div>
+            <h3 class="skill-card__title">FastAPI</h3>
+            <p class="skill-card__desc">
+              Building high-performance typed endpoints with Pydantic validation and OpenAPI documentation.
+            </p>
+          </article>
+
+          <article class="skill-card reveal" data-category="backend">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">API</span>
+              <span class="skill-card__tag">Architecture</span>
+            </div>
+            <h3 class="skill-card__title">REST APIs</h3>
+            <p class="skill-card__desc">
+              Designing clean resource endpoints, integrating external APIs, and handling rate limits and errors.
+            </p>
+          </article>
+
+          <article class="skill-card reveal" data-category="data">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">ETL</span>
+              <span class="skill-card__tag">Engineering</span>
+            </div>
+            <h3 class="skill-card__title">Data Pipelines (JSON/CSV/SQLite)</h3>
+            <p class="skill-card__desc">
+              End-to-end extraction, normalization, and persistence across JSON feeds, CSV exports, and SQLite.
+            </p>
+          </article>
+
+          <article class="skill-card reveal" data-category="workflow">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">Git</span>
+              <span class="skill-card__tag">Version Control</span>
+            </div>
+            <h3 class="skill-card__title">Git</h3>
+            <p class="skill-card__desc">
+              Branch-based workflows, clean commit history, and collaborative source management on GitHub.
+            </p>
+          </article>
+
+          <article class="skill-card reveal" data-category="workflow">
+            <div class="skill-card__top">
+              <span class="skill-card__icon" aria-hidden="true">UX</span>
+              <span class="skill-card__tag">Design</span>
+            </div>
+            <h3 class="skill-card__title">UI/UX Design (Figma)</h3>
+            <p class="skill-card__desc">
+              Wireframing, clean component systems, and user-centered interface prototypes for web products.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="section__eyebrow">Selected Work</p>
+            <h2 class="section__title">Featured Projects</h2>
+          </div>
+          <a
+            href="https://github.com/agysagyss-glitch?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="section__link"
+          >
+            All Repositories &rarr;
+          </a>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__repo">api-data-monitor</span>
+              <a
+                href="https://github.com/agysagyss-glitch/api-data-monitor"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__ext"
+                aria-label="Open api-data-monitor repository on GitHub"
+              >
+                GitHub &nearr;
+              </a>
+            </div>
+            <h3 class="project-card__title">Automated Market &amp; Environmental Data Pipeline</h3>
+            <p class="project-card__desc">
+              Automated ingestion pipeline that periodically fetches live market and environmental
+              telemetry from external REST APIs, normalizes nested JSON payloads, logs structured
+              records into SQLite, and generates clean CSV snapshots for downstream analysis.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Scheduled extraction with schema validation and fault-tolerant error handling</li>
+              <li>Dual-format persistence into relational SQLite tables and CSV exports</li>
+            </ul>
+            <div class="pipeline-flow" aria-label="Architecture flow">
+              <span class="pipeline-flow__label">Architecture</span>
+              <code class="pipeline-flow__steps">External REST APIs &rarr; Schema Validation &rarr; SQLite &amp; CSV Export</code>
+            </div>
+            <div class="tag-list" aria-label="Technologies used">
+              <span class="tag">Python</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">JSON</span>
+              <span class="tag">CSV</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Data Pipeline</span>
+            </div>
+            <div class="project-card__footer">
+              <a
+                href="https://github.com/agysagyss-glitch/api-data-monitor"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--small btn--ghost"
+              >
+                View Source on GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card__header">
+              <span class="project-card__repo">expense-tracker-api</span>
+              <a
+                href="https://github.com/agysagyss-glitch/expense-tracker-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="project-card__ext"
+                aria-label="Open expense-tracker-api repository on GitHub"
+              >
+                GitHub &nearr;
+              </a>
+            </div>
+            <h3 class="project-card__title">Expense Tracker REST API</h3>
+            <p class="project-card__desc">
+              Modular FastAPI backend for personal expense management featuring full CRUD operations,
+              category-level filtering, date-range summaries, and SQL-backed aggregation endpoints
+              with automatic interactive API documentation.
+            </p>
+            <ul class="project-card__highlights">
+              <li>Structured request/response validation and predictable HTTP status semantics</li>
+              <li>Clean SQLite persistence layer supporting category and spending analytics</li>
+            </ul>
+            <div class="pipeline-flow" aria-label="Architecture flow">
+              <span class="pipeline-flow__label">Architecture</span>
+              <code class="pipeline-flow__steps">FastAPI Endpoints &rarr; Pydantic Validation &rarr; SQLite Persistence</code>
+            </div>
+            <div class="tag-list" aria-label="Technologies used">
+              <span class="tag">Python</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">REST APIs</span>
+              <span class="tag">SQL</span>
+              <span class="tag">SQLite</span>
+              <span class="tag">Git</span>
+            </div>
+            <div class="project-card__footer">
+              <a
+                href="https://github.com/agysagyss-glitch/expense-tracker-api"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn--small btn--ghost"
+              >
+                View Source on GitHub
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education & Achievements -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <div>
+            <p class="section__eyebrow">Background</p>
+            <h2 class="section__title">Education &amp; Achievements</h2>
+          </div>
+        </div>
+
+        <div class="edu-grid">
+          <article class="edu-card reveal">
+            <div class="edu-card__meta">
+              <span class="badge">Education</span>
+              <span class="edu-card__period">3rd Year Undergraduate</span>
+            </div>
+            <h3 class="edu-card__title">B.Tech in Artificial Intelligence &amp; Data Science</h3>
+            <p class="edu-card__org">Sri Venkateswara College of Engineering (SVCE)</p>
+            <div class="edu-card__stat">
+              <span class="stat-label">Cumulative GPA</span>
+              <span class="stat-value">8.09 CGPA</span>
+            </div>
+            <p class="edu-card__desc">
+              Coursework spanning database management systems, data structures &amp; algorithms,
+              probability &amp; statistics, machine learning fundamentals, and applied data engineering.
+            </p>
+          </article>
+
+          <article class="edu-card reveal">
+            <div class="edu-card__meta">
+              <span class="badge badge--accent">Recognition</span>
+              <span class="edu-card__period">Competitions</span>
+            </div>
+            <h3 class="edu-card__title">Collegiate Hackathon Wins</h3>
+            <p class="edu-card__org">Inter-Collegiate &amp; Campus Hackathons</p>
+            <div class="edu-card__stat">
+              <span class="stat-label">Focus Areas</span>
+              <span class="stat-value">Data &amp; Backend Prototypes</span>
+            </div>
+            <p class="edu-card__desc">
+              Earned winning placements across collegiate hackathons by rapidly architecting
+              end-to-end APIs, data ingestion workflows, and intuitive Figma-prototyped interfaces
+              under tight deadlines.
+            </p>
+          </article>
+        </div>
+
+        <!-- Current Focus Strip -->
+        <div class="focus-strip reveal" aria-label="Current Focus">
+          <div class="focus-strip__header">
+            <span class="focus-strip__eyebrow">Current Focus</span>
+            <p class="focus-strip__sub">Active technical priorities &amp; academic roadmap</p>
+          </div>
+          <div class="focus-strip__items">
+            <div class="focus-item">
+              <span class="focus-item__dot" aria-hidden="true"></span>
+              <div>
+                <h4 class="focus-item__title">Data Engineering ETL Workflows</h4>
+                <p class="focus-item__desc">Automated API ingestion, schema validation, and fault-tolerant storage.</p>
+              </div>
+            </div>
+            <div class="focus-item">
+              <span class="focus-item__dot" aria-hidden="true"></span>
+              <div>
+                <h4 class="focus-item__title">SQL Data Modeling</h4>
+                <p class="focus-item__desc">Relational schema normalization, indexing, and analytical query design.</p>
+              </div>
+            </div>
+            <div class="focus-item">
+              <span class="focus-item__dot" aria-hidden="true"></span>
+              <div>
+                <h4 class="focus-item__title">GATE 2027 (Data Science &amp; AI)</h4>
+                <p class="focus-item__desc">Deepening foundations in probability, linear algebra, DBMS, and ML.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section--compact" id="contact">
+      <div class="container">
+        <div class="contact-card reveal">
+          <div class="contact-card__copy">
+            <p class="section__eyebrow">Get In Touch</p>
+            <h2 class="contact-card__title">Open for Data Engineering &amp; AI/Data Internships</h2>
+            <p class="contact-card__desc">
+              Looking for summer or semester internship opportunities where I can contribute to
+              data pipelines, backend APIs, and structured analytics workflows.
+            </p>
+          </div>
+
+          <div class="contact-card__actions">
+            <button
+              type="button"
+              class="btn btn--primary"
+              id="copy-email-btn"
+              data-email="santhosh.ag@example.com"
+              aria-live="polite"
+            >
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              <span id="copy-email-label">Copy Email</span>
+            </button>
+
+            <a
+              href="resume.pdf"
+              download
+              class="btn btn--ghost"
+              aria-label="Download Santhosh AG Resume PDF"
+            >
+              <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke-linecap="round" stroke-linejoin="round" />
+                <polyline points="7 10 12 15 17 10" stroke-linecap="round" stroke-linejoin="round" />
+                <line x1="12" y1="15" x2="12" y2="3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span>Download Resume</span>
+            </a>
+
+            <a
+              href="https://github.com/agysagyss-glitch"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              GitHub
+            </a>
+
+            <a
+              href="YOUR_LINKEDIN_URL_HERE"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn--ghost"
+            >
+              LinkedIn
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer__inner">
+      <div>
+        <p class="footer__name">Santhosh AG</p>
+        <p class="footer__note">AI &amp; Data Science Undergraduate &bull; SVCE</p>
+      </div>
+      <div class="footer__links">
+        <a href="https://github.com/agysagyss-glitch" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="YOUR_LINKEDIN_URL_HERE" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="resume.pdf" download>Resume</a>
+        <a href="#top">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
