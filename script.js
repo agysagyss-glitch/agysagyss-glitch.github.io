@@ -97,15 +97,17 @@ document.addEventListener("DOMContentLoaded", () => {
     revealItems.forEach((item) => item.classList.add("is-visible"));
   }
 
-  // Click-to-copy email button with brief "Copied!" confirmation
+  // Bot-safe click-to-copy email button with brief "Copied!" confirmation
   const copyEmailBtn = document.getElementById("copy-email-btn");
   const copyEmailLabel = document.getElementById("copy-email-label");
   if (copyEmailBtn && copyEmailLabel) {
     let resetTimerId = null;
 
     copyEmailBtn.addEventListener("click", async () => {
-      const email = copyEmailBtn.dataset.email || "";
-      if (!email) return;
+      // Construct email dynamically at click time so plain-text email is absent from HTML
+      const localPart = ["2024ad", "0172"].join("");
+      const domainPart = ["svce", "ac", "in"].join(".");
+      const email = `${localPart}@${domainPart}`;
 
       let copied = false;
       if (navigator.clipboard && window.isSecureContext) {
